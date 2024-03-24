@@ -23,4 +23,4 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: jaipalsaini/nuxt3:latest
+        tags: jaipalsaini/nuxt3:v1
