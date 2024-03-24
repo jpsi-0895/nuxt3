@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag jaipalsaini/nuxt3:latest
+    - name: Build and push
+      uses: docker/build-push-action@v5
+      with:
+        push: true
+        tags: jaipalsaini/nuxt3:latest
